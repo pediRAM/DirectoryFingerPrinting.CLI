@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net48;net6.0;net7.0;net8.0</TargetFrameworks>
+    <LangVersion>10</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    
+    <AssemblyName>dfp</AssemblyName>
+    
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0</FileVersion>
+    <Version>1.1.0</Version>
+    <VersionSuffix>alpha</VersionSuffix>
+    <PackageVersion>1.1.0-alpha</PackageVersion>
+
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <Title>DirectoryFingerPrinting.CLI</Title>
+
+    <Description>
+      This library provides types and methods for parsing arguments, comparing two file-metadata, exporting reports in CSV, JSON or XML, help text etc., which are used by the cli application "dpf.exe" which you can find in my other repository "DirectoryFingerPrinting.CLI".
+    </Description>
+    <PackageTags>library lib directory differences directories differencies file fingerprint filehash checksum hash metadata calculate calculation comparing compare comparison forensic versioning CRC32 MD5 SHA-1 SHA-256 SHA-512 SHA1 SHA256 SHA512</PackageTags>
+
+    <PackageReleaseNotes>ALPHA Version 1.0.0-alpha</PackageReleaseNotes>
+
+    <Authors>Pedram GANJEH-HADIDI</Authors>
+    <Owners>Pedram GANJEH-HADIDI</Owners>
+
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
+    
+    <ProjectUrl>https://github.com/pediRAM/DirectoryFingerPrinting.CLI.Library</ProjectUrl>
+    <PackageProjectUrl>https://github.com/pediRAM/DirectoryFingerPrinting.CLI.Library</PackageProjectUrl>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/pediRAM/DirectoryFingerPrinting.CLI.Library.git</RepositoryUrl>
+    <ApplicationIcon>dfp-logo.ico</ApplicationIcon>
+
+    <StartupObject>DirectoryFingerPrinting.CLI.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="License.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="dfp-logo.ico" />
+    <Content Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="License.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DirectoryFingerPrinting.CLI.Library" Version="1.0.0-alpha" />
+    <PackageReference Include="DirectoryFingerPrinting.Library" Version="1.1.0-beta" />
+    <PackageReference Include="System.IO.Hashing" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>

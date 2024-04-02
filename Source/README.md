@@ -455,4 +455,3 @@ echo %errorlevel%
 | +      | **<div style="color: blue; background-color: white;">&#x2588; Blue &#x2588;</div>**     | New/Added | New file found   |
 | -      | **<div style="color: red; background-color: white;">&#x2588; Red &#x2588;</div>**       | Removed   | File is missing  |
 | ~      | **<div style="color: yellow; background-color: black;">&#x2588; Yellow &#x2588;</div>** | Changed   | File has changes |
-
