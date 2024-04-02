@@ -451,7 +451,7 @@ echo %errorlevel%
 # 10. Symbols and Colors
 
 | Symbol | Color                                                                                   | Meaning   | Description      |
-|--------|-----------------------------------------------------------------------------------------|-----------|------------------|
-| +      | **<div style="color: blue; background-color: white;">&#x2588; Blue &#x2588;</div>**     | New/Added | New file found   |
-| -      | **<div style="color: red; background-color: white;">&#x2588; Red &#x2588;</div>**       | Removed   | File is missing  |
-| ~      | **<div style="color: yellow; background-color: black;">&#x2588; Yellow &#x2588;</div>** | Changed   | File has changes |
+|--------|----------------------------|-----------|------------------|
+| +      | $${\color{blue}Blue}$$     | New/Added | New file found   |
+| -      | $${\color{red}Red}$$       | Removed   | File is missing  |
+| ~      | $${\color{yellow}Yellow}$$ | Changed   | File has changes |
