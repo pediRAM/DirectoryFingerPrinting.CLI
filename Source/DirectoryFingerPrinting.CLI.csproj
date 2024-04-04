@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -13,8 +13,8 @@
     <AssemblyVersion>1.1.0</AssemblyVersion>
     <FileVersion>1.1.0</FileVersion>
     <Version>1.1.0</Version>
-    <VersionSuffix>alpha</VersionSuffix>
-    <PackageVersion>1.1.0-alpha</PackageVersion>
+    <VersionSuffix></VersionSuffix>
+    <PackageVersion>1.1.0</PackageVersion>
 
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -26,7 +26,7 @@
     </Description>
     <PackageTags>library lib directory differences directories differencies file fingerprint filehash checksum hash metadata calculate calculation comparing compare comparison forensic versioning CRC32 MD5 SHA-1 SHA-256 SHA-512 SHA1 SHA256 SHA512</PackageTags>
 
-    <PackageReleaseNotes>ALPHA Version 1.0.0-alpha</PackageReleaseNotes>
+    <PackageReleaseNotes>Release Version 1.0.0</PackageReleaseNotes>
 
     <Authors>Pedram GANJEH-HADIDI</Authors>
     <Owners>Pedram GANJEH-HADIDI</Owners>
@@ -76,9 +76,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DirectoryFingerPrinting.CLI.Library" Version="1.0.0-alpha" />
+    <PackageReference Include="DirectoryFingerPrinting.CLI.Library" Version="1.0.0-beta" />
     <PackageReference Include="DirectoryFingerPrinting.Library" Version="1.1.0-beta" />
-    <PackageReference Include="System.IO.Hashing" Version="7.0.0" />
+    <PackageReference Include="System.IO.Hashing" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
